@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TableWidget</class>
+ <widget class="QWidget" name="TableWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Сохранённые данные</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #f5f7fa; /* Светлый фон */
+}
+
+QPushButton {
+  background-color: #4a90e2; /* Синий цвет */
+  border: 1px solid #4a90e2;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* Наведение */
+QPushButton:hover {
+  background-color: #357ABD; /* Темно-синий при наведении */
+}
+
+/* Нажатие */
+QPushButton:pressed {
+  background-color: #2A65A0;
+}
+
+/* Отключенная кнопка */
+QPushButton:disabled {
+  background-color: #AFCDEB;
+  border: 1px solid #AFCDEB;
+  color: #ccc;
+}
+
+/* Улучшенный стиль QLabel */
+QLabel {
+  font-size: 16px; /* Увеличенный шрифт */
+  font-weight: bold;
+  color: #ffffff; /* Белый цвет текста */
+  background-color: #4a90e2; /* Синий фон */
+  padding: 6px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: &quot;Segoe UI&quot;, &quot;Arial&quot;, sans-serif; /* Интересный шрифт */
+}
+
+/* Стиль QLineEdit */
+QLineEdit {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ecf0f1;
+  color: black;
+}
+
+/* Улучшенный стиль для QDoubleSpinBox */
+QDoubleSpinBox {
+  background-color: #E3F2FD;
+  border: 2px solid #90CAF9;
+  border-radius: 8px;
+  padding: 5px;
+  color: #0D47A1;
+  font-size: 14px;
+}
+
+/* Кнопки вверх/вниз */
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+  background-color: #BBDEFB;
+  border: 1px solid #90CAF9;
+  width: 16px;
+  border-radius: 4px;
+}
+
+/* Читаемые стрелки */
+QDoubleSpinBox::up-arrow {
+  image: url(:/icons/up-arrow.png); /* Заменить на путь к иконке */
+  width: 10px;
+  height: 10px;
+}
+
+QDoubleSpinBox::down-arrow {
+  image: url(:/icons/down-arrow.png); /* Заменить на путь к иконке */
+  width: 10px;
+  height: 10px;
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+	background-color: white;
+	gridline-color: black;
+}
+QHeaderView::section {
+	background-color: lightgray;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;  /* Увеличенный шрифт для заголовков */
+}
+QTableWidget::item {
+	color: black;
+	font-size: 14px;  /* Увеличенный шрифт для ячеек */
+}
+QTableWidget::item:!alternate {
+	background-color: white;  /* Белый цвет для нечетных строк */
+}
+QTableWidget::item:alternate {
+	background-color: lightgray;  /* Светло-серый цвет для четных строк */
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
