@@ -30,7 +30,7 @@
     ```
 2. Navigate to the project directory:
     ```bash
-    cd financial-tracker-app
+    cd finance-tracker-app
     ```
 3. Install dependencies:
     ```bash
