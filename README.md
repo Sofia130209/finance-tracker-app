@@ -26,7 +26,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Sofia130209/financial-tracker-app.git
+    git clone https://github.com/Sofia130209/finance-tracker-app.git
     ```
 2. Navigate to the project directory:
     ```bash
